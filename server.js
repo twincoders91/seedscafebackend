@@ -5,6 +5,7 @@ const cors = require("cors");
 const connectDB = require("./db/db");
 const artWorkDatas = require("./router/artworkData");
 const artistDatas = require("./router/artistData");
+const menuItems = require("./router/menuItems");
 
 const app = express();
 
@@ -15,6 +16,7 @@ connectDB(process.env.MONGODB_URI);
 
 app.use("/artwork", artWorkDatas);
 app.use("/artist", artistDatas);
+app.use("/menu", menuItems);
 
 const PORT = process.env.PORT || 5006;
 app.listen(PORT);
