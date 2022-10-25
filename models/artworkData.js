@@ -10,6 +10,7 @@ const ArtWorkDatasSchema = new mongoose.Schema(
     price: { type: Number, required: true },
     physicalSize: { type: String, required: true },
     physicalMaterial: { type: String, required: true },
+    sold: { type: Boolean },
   },
   { collection: "artWorkDatas" }
 );

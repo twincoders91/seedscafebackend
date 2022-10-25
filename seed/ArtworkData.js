@@ -10,6 +10,7 @@ module.exports = [
     price: 330,
     physicalSize: "29.7 x 42 cm",
     physicalMaterial: "Acrylic Paint and Ink on Mixed Media Paper",
+    sold: false,
   },
   //02
   {
@@ -22,6 +23,7 @@ module.exports = [
     price: 330,
     physicalSize: "29.7 x 42 cm",
     physicalMaterial: "Acrylic Paint and Ink on Mixed Media Paper",
+    sold: false,
   },
   //03
   {
@@ -34,6 +36,7 @@ module.exports = [
     price: 160,
     physicalSize: "20 x 30 cm",
     physicalMaterial: "Acrylic Paint and Markers on Canvas",
+    sold: false,
   },
   //04
   {
@@ -47,6 +50,7 @@ module.exports = [
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial:
       "Watercolour Pencils, Acrylic Paint and Markers on Art Paper",
+    sold: false,
   },
   //05
   {
@@ -59,6 +63,7 @@ module.exports = [
     price: 100,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Colour Pencils on Mixed Media Paper",
+    sold: false,
   },
   //06
   {
@@ -71,6 +76,7 @@ module.exports = [
     price: 200,
     physicalSize: "29.7 x 42 cm",
     physicalMaterial: "Acrylic paint and Markers on Mixed Media Paper",
+    sold: false,
   },
   //07
   {
@@ -84,6 +90,7 @@ module.exports = [
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial:
       "Acrylic, Watercolour Pencils and Markers on Mixed Media Paper",
+    sold: false,
   },
   //08
   {
@@ -96,6 +103,7 @@ module.exports = [
     price: 250,
     physicalSize: "40 x 50 cm",
     physicalMaterial: "Acrylic Paint and Markers on Canvas",
+    sold: false,
   },
   //09
   {
@@ -109,6 +117,7 @@ module.exports = [
     physicalSize: "21.0 x 29.7 cm",
     physicalMaterial:
       "Watercolour Pencils, Acrylic Paint and Markers on Mixed Media Paper",
+    sold: false,
   },
   //10
   {
@@ -122,6 +131,7 @@ module.exports = [
     physicalSize: "29.7 x 42 cm",
     physicalMaterial:
       "Acrylic, Watercolour Pencils and Markers on Mixed Media Paper",
+    sold: false,
   },
   //11
   {
@@ -134,6 +144,7 @@ module.exports = [
     price: 70,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
   //12
   {
@@ -146,6 +157,7 @@ module.exports = [
     price: 80,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Art Paper",
+    sold: false,
   },
   //13
   {
@@ -159,6 +171,7 @@ module.exports = [
     physicalSize: "29.7 x 42 cm",
     physicalMaterial:
       "Acrylic, Watercolour Pencils and Markers on Mixed Media Paper",
+    sold: false,
   },
   //14
   {
@@ -172,6 +185,7 @@ module.exports = [
     physicalSize: "29.7 x 42 cm",
     physicalMaterial:
       "Acrylic, Watercolour Pencils and Markers on Mixed Media Paper",
+    sold: false,
   },
   //15
   {
@@ -184,6 +198,7 @@ module.exports = [
     price: 250,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //16
@@ -198,6 +213,7 @@ module.exports = [
     physicalSize: "30 x 40 cm",
     physicalMaterial:
       "Acrylic, Watercolour Pencils and Markers on Mixed Media Paper",
+    sold: false,
   },
 
   //17
@@ -211,6 +227,7 @@ module.exports = [
     price: 190,
     physicalSize: "29.7 x 42 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper, Framed",
+    sold: false,
   },
 
   //18
@@ -224,6 +241,7 @@ module.exports = [
     price: 200,
     physicalSize: "29.7 x 42 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper",
+    sold: false,
   },
 
   //19
@@ -237,6 +255,7 @@ module.exports = [
     price: 300,
     physicalSize: "50 x 40 cm",
     physicalMaterial: "Acrylic on Canvas, Framed",
+    sold: false,
   },
 
   //20
@@ -250,6 +269,7 @@ module.exports = [
     price: 280,
     physicalSize: "40 x 50 cm",
     physicalMaterial: "Oil pastels on Mixed Media",
+    sold: false,
   },
 
   //21
@@ -263,6 +283,7 @@ module.exports = [
     price: 170,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Art Paper",
+    sold: false,
   },
 
   //22
@@ -276,6 +297,7 @@ module.exports = [
     price: 170,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //23
@@ -289,6 +311,7 @@ module.exports = [
     price: 100,
     physicalSize: "30 x 42 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //24
@@ -302,6 +325,7 @@ module.exports = [
     price: 160,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper, Framed",
+    sold: false,
   },
 
   //25
@@ -315,6 +339,7 @@ module.exports = [
     price: 150,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Oil Pastels on Mixed Media Paper, Framed",
+    sold: false,
   },
 
   //26
@@ -328,6 +353,7 @@ module.exports = [
     price: 200,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper",
+    sold: false,
   },
 
   //27
@@ -341,6 +367,7 @@ module.exports = [
     price: 190,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Acrylic on Canvas, Framed",
+    sold: false,
   },
 
   //28
@@ -354,6 +381,7 @@ module.exports = [
     price: 210,
     physicalSize: "30 x 42 cm",
     physicalMaterial: "Oil pastels on Mixed Media",
+    sold: false,
   },
 
   //29
@@ -367,6 +395,7 @@ module.exports = [
     price: 160,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Art Paper",
+    sold: false,
   },
 
   //30
@@ -380,6 +409,7 @@ module.exports = [
     price: 180,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //31
@@ -393,6 +423,7 @@ module.exports = [
     price: 210,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //32
@@ -406,6 +437,7 @@ module.exports = [
     price: 140,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Acrylic Paint and Markers on Canvas",
+    sold: false,
   },
 
   //33
@@ -420,6 +452,7 @@ module.exports = [
     physicalSize: "30 x 42 cm",
     physicalMaterial:
       "Watercolour Pencils, Acrylic Paint and Markers on Art Paper",
+    sold: false,
   },
 
   //34
@@ -433,6 +466,7 @@ module.exports = [
     price: 200,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Colour Pencils on Mixed Media Paper",
+    sold: false,
   },
 
   //35
@@ -446,6 +480,7 @@ module.exports = [
     price: 190,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper",
+    sold: false,
   },
 
   //36
@@ -459,6 +494,7 @@ module.exports = [
     price: 210,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper, Framed",
+    sold: false,
   },
 
   //37
@@ -472,6 +508,7 @@ module.exports = [
     price: 150,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //38
@@ -485,6 +522,7 @@ module.exports = [
     price: 160,
     physicalSize: "30 x 42 cm",
     physicalMaterial: "Acrylic Paint and Markers on Canvas",
+    sold: false,
   },
 
   //39
@@ -499,6 +537,7 @@ module.exports = [
     physicalSize: "21 x 29.7 cm",
     physicalMaterial:
       "Watercolour Pencils, Acrylic Paint and Markers on Art Paper",
+    sold: false,
   },
 
   //40
@@ -512,6 +551,7 @@ module.exports = [
     price: 200,
     physicalSize: "21 x 29.7 cm",
     physicalMaterial: "Colour Pencils on Mixed Media Paper",
+    sold: false,
   },
 
   //41
@@ -525,6 +565,7 @@ module.exports = [
     price: 200,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Acrylic Paint and Ink on Mixed Media Paper",
+    sold: false,
   },
 
   //42
@@ -538,6 +579,7 @@ module.exports = [
     price: 200,
     physicalSize: "40 x 50 cm",
     physicalMaterial: "Acrylic Paint and Ink on Mixed Media Paper",
+    sold: false,
   },
 
   //43
@@ -551,6 +593,7 @@ module.exports = [
     price: 200,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Acrylic Paint and Markers on Canvas",
+    sold: false,
   },
 
   //44
@@ -565,6 +608,7 @@ module.exports = [
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial:
       "Watercolour Pencils, Acrylic Paint and Markers on Art Paper",
+    sold: false,
   },
 
   //45
@@ -578,6 +622,7 @@ module.exports = [
     price: 200,
     physicalSize: "30 x 42 cm",
     physicalMaterial: "Colour Pencils on Mixed Media Paper",
+    sold: false,
   },
 
   //46
@@ -591,6 +636,7 @@ module.exports = [
     price: 210,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper",
+    sold: false,
   },
 
   //47
@@ -604,6 +650,7 @@ module.exports = [
     price: 300,
     physicalSize: "30 x 42 cm",
     physicalMaterial: "Oil pastels on Mixed Media Paper, Framed",
+    sold: false,
   },
 
   //48
@@ -617,6 +664,7 @@ module.exports = [
     price: 160,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Watercolour Pencils and Ink on Mixed Paper",
+    sold: false,
   },
 
   //49
@@ -630,6 +678,7 @@ module.exports = [
     price: 210,
     physicalSize: "29.7 x 29.7 cm",
     physicalMaterial: "Oil Pastels on Mixed Media",
+    sold: false,
   },
 
   //50
@@ -643,5 +692,6 @@ module.exports = [
     price: 210,
     physicalSize: "40 X 50 cm",
     physicalMaterial: "Oil Pastels on Mixed Media",
+    sold: false,
   },
 ];

@@ -16,7 +16,7 @@ const seed = async (req, res) => {
 
 //viewallartwork
 const allArtworkData = async (req, res) => {
-  const allArtWork = await ArtWorkDatas.find();
+  const allArtWork = await ArtWorkDatas.find({ sold: false });
 
   res.json(allArtWork);
 };
@@ -32,6 +32,7 @@ const createArtworkData = async (req, res) => {
     price: req.body.price,
     physicalSize: req.body.physicalSize,
     physicalMaterial: req.body.physicalMaterial,
+    sold: req.body.sold,
   });
 
   try {
@@ -47,7 +48,7 @@ const createArtworkData = async (req, res) => {
 const deleteArtworkData = async (req, res) => {
   try {
     const response = await ArtWorkDatas.findByIdAndDelete(req.body._id);
-
+    console.log(response);
     res.json({ status: "ok", message: "deleted" });
   } catch (err) {
     console.error(err.message);
@@ -68,20 +69,19 @@ const deleteAllArtworkData = async (req, res) => {
 
 //update
 const updateArtworkData = async (req, res) => {
-  const response = await ArtWorkDatas.findByIdAndUpdate(
-    { _id: req.body._id },
-    {
-      img: req.body.img,
-      category: req.body.category,
-      artistName: req.body.artistName,
-      artName: req.body.artName,
-      description: req.body.description,
-      price: req.body.price,
-      physicalSize: req.body.physicalSize,
-      physicalMaterial: req.body.physicalMaterial,
-    }
-  );
+  const response = await ArtWorkDatas.findByIdAndUpdate(req.body.id, {
+    img: req.body.img,
+    category: req.body.category,
+    artistName: req.body.artistName,
+    artName: req.body.artName,
+    description: req.body.description,
+    price: req.body.price,
+    physicalSize: req.body.physicalSize,
+    physicalMaterial: req.body.physicalMaterial,
+    sold: req.body.sold,
+  });
   console.log(response);
+  console.log(req.body);
   res.json({ status: "ok", message: "updated" });
 };
 
