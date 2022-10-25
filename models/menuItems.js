@@ -7,7 +7,7 @@ const MenuItemsSchema = new mongoose.Schema(
     img: { type: String, required: true },
     description: { type: String, required: true },
     category: { type: String, required: true },
-    tags: { type: String, required: true },
+    tags: { type: String },
   },
   { collection: "menuItems" }
 );

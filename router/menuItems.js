@@ -11,7 +11,7 @@ const {
 } = require("../controller/menuitems");
 
 //seed
-router.get("/seedmenuitems", seed);
+router.put("/seedmenuitems", seed);
 
 //view all menu items
 router.get("/allmenuitems", allMenuItems);
