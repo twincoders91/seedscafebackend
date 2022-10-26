@@ -67,26 +67,29 @@ const deleteAllMenuItems = async (req, res) => {
 
 //update
 const updateMenuItems = async (req, res) => {
-  const response = await MenuItems.findByIdAndUpdate(
-    { _id: req.body._id },
-    {
-      name: req.body.name,
-      price: req.body.price,
-      img: req.body.img,
-      description: req.body.description,
-      category: req.body.category,
-      // will this be optional?
-      tags: req.body.tags,
-    }
-  );
+  const response = await MenuItems.findByIdAndUpdate(req.params.id, {
+    name: req.body.name,
+    price: req.body.price,
+    imgç: req.body.img,
+    description: req.body.description,
+    category: req.body.category,
+    // will this be optional?
+    tags: req.body.tags,
+  });
   console.log(response);
-  res.json({ status: "ok", message: "updated" });
+
+  res.json(response);
 };
 
 //getbyid
 const findbyid = async (req, res) => {
-  const oneItem = await MenuItems.findById(req.body._id);
+  const oneItem = await MenuItems.findById(req.params.id);
   res.json(oneItem);
+};
+
+const findbycategory = async (req, res) => {
+  const items = await MenuItems.find({ category: req.params.category });
+  res.json(items);
 };
 
 module.exports = {
@@ -97,4 +100,5 @@ module.exports = {
   deleteAllMenuItems,
   updateMenuItems,
   findbyid,
+  findbycategory,
 };

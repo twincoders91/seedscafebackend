@@ -8,6 +8,7 @@ const {
   deleteAllMenuItems,
   updateMenuItems,
   findbyid,
+  findbycategory,
 } = require("../controller/menuitems");
 
 //seed
@@ -24,9 +25,10 @@ router.delete("/deletemenuitem", deleteMenuItem);
 router.delete("/deleteallmenuitems", deleteAllMenuItems);
 
 //update
-router.patch("/updatemenuitem", updateMenuItems);
+router.patch("/updatemenuitem/:id", updateMenuItems);
 
 //getbyid
-router.put("/findbyid", findbyid);
+router.get("/findbyid/:id", findbyid);
+router.get("/findbycategory/:category", findbycategory);
 
 module.exports = router;
