@@ -200,7 +200,7 @@ module.exports = [
     tags: "Healthy choice",
   },
   {
-    name: "Muffin (Banana Walnut/Chocolate/Blueberry)",
+    name: "Muffin (Banana Walnut/Chocolate)",
     price: "4.20",
     img: "https://i.imgur.com/vrYxhGg.jpg",
     description: "Muffin (Banana Walnut/Chocolate/Blueberry)",
