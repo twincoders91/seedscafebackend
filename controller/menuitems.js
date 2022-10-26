@@ -33,13 +33,18 @@ const createMenuItem = async (req, res) => {
     tags: req.body.tags,
   });
 
-  try {
-    await createdItem.save();
-    res.json({ status: "ok", message: "saved" });
-  } catch (err) {
-    console.error(err.message);
-    process.exit(1);
-  }
+  await MenuItems.insertMany(createdItem, function (err, docsInserted) {
+    res.json(docsInserted[0]);
+    console.log(docsInserted[0]);
+  });
+
+  // try {
+  //   await createdItem.save();
+  //   res.json({ status: "ok", message: "saved" });
+  // } catch (err) {
+  //   console.error(err.message);
+  //   process.exit(1);
+  // }
 };
 
 //delete
@@ -67,18 +72,30 @@ const deleteAllMenuItems = async (req, res) => {
 
 //update
 const updateMenuItems = async (req, res) => {
-  const response = await MenuItems.findByIdAndUpdate(req.params.id, {
-    name: req.body.name,
-    price: req.body.price,
-    imgç: req.body.img,
-    description: req.body.description,
-    category: req.body.category,
-    // will this be optional?
-    tags: req.body.tags,
-  });
-  console.log(response);
+  const doc = await MenuItems.findOneAndUpdate(
+    { _id: req.params.id },
+    {
+      name: req.body.name,
+      price: req.body.price,
+      img: req.body.img,
+      description: req.body.description,
+      category: req.body.category,
+      // will this be optional?
+      tags: req.body.tags,
+    },
+    { new: true, rawResult: true }
+    // { new: true },
+    // (err, doc) => {
+    //   res.json(doc);
+    // }
+  );
 
-  res.json(response);
+  // await MenuItems.findOneAndUpdate({ _id: req.params.id }, {});
+  // console.log(response);
+
+  // res.json(response);
+  console.log(doc);
+  res.json(doc);
 };
 
 //getbyid
