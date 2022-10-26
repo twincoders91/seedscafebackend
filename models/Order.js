@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const OrderSchema = new mongoose.Schema(
   {
     mode: { type: String, required: true },
-    number: { type: Number, required: true },
+    number: { type: String, required: true },
     dishes: [
       {
         name: { type: String, required: true },
