@@ -1,46 +1,50 @@
 module.exports = [
   {
-    mode: "dine in",
+    mode: "Dine In",
     number: "1",
     dishes: [
       {
-        name: "Avocado Toast",
+        name: "Egg Avocado Toast",
         price: "13.9",
         quantity: "1",
+        specialRequest: "",
       },
     ],
     paid: false,
     fulfilled: false,
   },
   {
-    mode: "dine in",
+    mode: "Dine In",
     number: "2",
     dishes: [
       {
-        name: "Coffee",
-        price: "5.9",
+        name: "Capuccino",
+        price: "8.9",
         quantity: "1",
+        specialRequest: "Less Sugar",
       },
       {
-        name: "Tea",
-        price: "5.9",
+        name: "Kalahari Rooibos",
+        price: "8.9",
         quantity: "1",
+        specialRequest: "",
       },
     ],
     paid: false,
     fulfilled: false,
   },
   {
-    mode: "take away",
-    number: "103",
+    mode: "Take Away",
+    number: "Takeaway",
     dishes: [
       {
-        name: "Baked Rice",
-        price: "13.0",
+        name: "Chicken Baked Rice",
+        price: "13.9",
         quantity: "1",
+        specialRequest: "Less Cheese",
       },
     ],
     paid: false,
-    fulfilled: false,
+    fulfilled: true,
   },
 ];
