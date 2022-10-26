@@ -44,6 +44,11 @@ router.get("/", async (req, res) => {
   res.json(response);
 });
 
+router.get("/count", async (req, res) => {
+  const response = await Order.countDocuments();
+  res.json(response);
+});
+
 router.get("/id/:id", async (req, res) => {
   const response = await Order.findById(req.params.id);
   res.json(response);
